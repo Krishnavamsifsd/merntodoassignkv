@@ -23,7 +23,7 @@ mongoose.connect(process.env.DB_CONNECT)
 //routes
 app.use('/', createAccountRoute);
 app.use('/', loginRoute);
-app.use('/todo-items', todoItemRoute);
+app.use('/', todoItemRoute);
 // error handling middleware
 app.use(function (err, req, res, next) {
     console.error(err.stack)
